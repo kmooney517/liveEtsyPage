@@ -1,0 +1,533 @@
+$EtsyBlue: #34A8C4;
+$BackgroundColor: #F5F5F1;
+$BorderColors: #c4c4c0;
+
+* {
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  min-width: 1000px;
+  div .large_area{
+    background-color: $BackgroundColor;
+    margin-right: 60px
+  }
+}
+
+//Header Styling----------------------------------------//
+
+.header{
+  display: inline-block;
+  margin: 0;
+  padding: 20px 75px;
+  border-bottom: 1px solid $BorderColors;
+  li {
+    display: inline-block;
+  }
+  div.left{
+    float: left;
+    margin-right: 100px;
+    li button{
+      background-color: $EtsyBlue;
+      color: white;
+      border-radius: 1px;
+      border: none;
+      padding: 5px 10px;
+      margin-left: -10px;
+      &:hover{
+        background-color: #0ACCF3;
+      }
+    }
+    li input{
+      height: 22px; 
+      border-color: 1px solid grey;
+      border-radius: 4px;
+      padding-right: 40px;
+    }
+  }
+  div.right{
+    float: right;
+    margin-left: 300px;
+    ul{
+      padding-bottom: 0;
+      margin-top: -55px;
+      margin-right: 100px;
+    }
+    ul li{
+      padding-right: 20px;
+      font-size: 15px;
+      a{
+        text-decoration: none;
+        color: $EtsyBlue;
+      }
+      button{
+        background-color: white;
+        border: 1px solid $EtsyBlue;
+        border-radius: 3px;
+        padding: 5px 4px;
+        color: $EtsyBlue;
+        &:hover{
+          background-color: #BEE3EC;
+        }
+
+      }
+      .cart{
+        border-top: 0;
+        border-bottom: 0;
+        border-right: 0;
+        border-left:1px solid $BorderColors;
+        border-radius: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        color: $BorderColors;
+        font-size: 14px;
+        &:hover{
+          background-color: white;
+        }
+      }
+    }
+  }
+  li.symbol a{
+    font-size: 32px;
+    color: #F56400;
+    padding-right: 20px;
+  }
+  .cart-sprite {
+    background: url('../images/cart.png') no-repeat 0 -1px;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 13px;
+    position: relative;
+    top: 15px;
+    left: 23px;
+  }
+}
+
+//Navbar Styling ----------------------------------------//
+.nav{
+  border-bottom: 1px solid $BorderColors;
+  margin-top: 0;
+  ul{
+    margin-left: 75px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+  }
+  li {
+    display: inline-block;
+    padding-right: 25px;
+    font-size: 14px;
+    color: $BorderColors;
+    a{
+      text-decoration: none;
+      color: #9FA0AB;
+    }
+  }  
+}
+
+//Left Side-bar styling ---------------------------------//
+
+.left_content{
+  background-color: $BackgroundColor;
+  padding-left: 100px;
+  font-size: 12px;
+  float: left;
+  margin-right: 20px;
+}
+
+.sidebar_one {
+  padding-top: 25px;
+  width: 240px;
+  font-size: 14px;
+  p {
+    font-weight: bold;
+  }
+  .box{
+    border: 1px solid $BorderColors;
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px;
+    ul{
+      padding-left: 10px;
+    }
+    li{
+      padding: 5px;
+      a{
+        text-decoration: none;
+        color: $EtsyBlue;
+        &:hover{
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+}
+
+.sidebar_two {
+  padding-top: 25px;
+  width: 240px;
+  font-size: 14px;
+  margin-bottom: 900px;
+  p {
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .divider{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .box{
+    border: 1px solid $BorderColors;
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px;
+    .dividerSpecial{
+      margin-top: -20px;
+      margin-bottom: 15px;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        top: -45px;
+        right: 15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent $BorderColors;
+      }
+    }
+    ul{
+      padding-left: 10px;
+    }
+    li{
+      padding: 5px;
+      margin-left: -15px;
+
+      a{
+        text-decoration: none;
+        color: $EtsyBlue;
+        margin-left: -25px;
+        &:hover{
+          color: black;
+          font-weight:bold;
+        }
+      }
+    }
+    .chooseLocation{
+        margin-left: 13px;
+    }
+    .shipIt{
+      padding-bottom: 25px;
+    }
+    .shipping input{
+    width: 200px;
+    padding-left: 5px;
+    }
+    form{
+      display:inline-block;
+      margin-top: -15px;
+    }
+    input{
+      width: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      border-radius: 2px;
+      margin-top: -10px;
+      &.highPrice{
+        margin-left: 20px;
+      }
+      &.arrow{
+        position: relative;
+        top: 27px;
+        background-color: white;
+        width: 40px;
+        padding-bottom: 12px;
+        padding-top: 7px;
+      }
+    }
+    p.to{
+      position: relative;
+      font-weight: normal;
+      right: 96px;
+    }
+    p.money{
+      position: relative;
+      font-weight: normal;
+      bottom: 36px;
+      right: -10px;
+      width: 5px;
+      margin-bottom: -40px;
+    }
+    p.money2{
+      position: relative;
+      font-weight: normal;
+      right: 96px;
+      bottom: 32px;
+      left: 110px;
+      width: 5px;
+    }
+  }
+
+
+  //Filter By Color Option ----------------------------------
+  .button{
+    height: 20px;
+    width: 20px;
+    border: 1px solid $BorderColors;
+    border-radius: 2px;
+    display: inline-block;  
+  }
+  .red{
+    background-color: red;
+  }
+  .orange{
+    background-color: orange;
+  }
+  .yellow{
+    background-color: yellow;
+  }
+  .green{
+    background-color: green;
+  }
+  .blue{
+    background-color: blue;
+  }
+  .indigo{
+    background-color: indigo;
+  }
+  .black{
+    background-color: black;
+  }
+}
+
+.tiles{
+  font-size: 12px;
+  background-color: $BackgroundColor;
+  .extra{
+    padding-top: 25px;
+    font-size: 13px;
+    li.top{
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 20px;
+    }
+    a{
+      padding-left: 20px;
+      text-decoration: none;
+      color: $EtsyBlue;
+      position: relative;
+    }
+    .sortBy{
+      float: right;
+      margin-right: 174px;
+      a{
+        padding-left: 0;
+        text-decoration: none;
+        color: $EtsyBlue;
+        position: relative;
+        &:after{
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -17px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 5px 0 5px;
+        border-color: $BorderColors transparent transparent transparent;
+      }
+      }
+    }
+  }
+  .eachTile {
+    width: 230px;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid $BorderColors;
+    border-radius: 3px;
+    margin-top: 20px;
+    position: relative;
+    :hover:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: white;    
+      background-image: url('../images/hamburger.png');
+      background-size: 20px 20px;
+      border: 1px solid $BorderColors;
+      width: 20px;
+      height: 19px;
+      margin-top: 5px;
+      margin-right: 5px;
+      border-radius: 4px;
+
+    }
+    :hover:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 25px;
+      background-color: white;
+      background-image: url('../images/heart.png');
+      background-size: 20px 20px;
+      border: 1px solid $BorderColors;
+      width: 20px;
+      height: 19px;
+      margin-top: 5px;
+      margin-right: 5px;
+      border-radius: 4px;
+    }
+    img{
+      width: 100%;
+    }
+    p{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      &.price{
+        float: right;
+        color: #76C238;
+      }
+      &.title a{
+        text-decoration: none;
+        color: black;
+      }
+      &.name a{
+        text-decoration: none;
+        color: grey;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.relatedTo{
+  padding-top: 25px;
+  padding-left: 380px;
+  background-color: $BackgroundColor;
+  p{
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  ul{
+    padding-left: 0px;
+    padding-right: 70px;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  li{
+    padding-bottom: 5px;
+    a{
+      text-decoration: none;
+      color: $EtsyBlue;
+      }
+  }
+  .looking a{
+    text-decoration: none;
+    color: $EtsyBlue;
+  }
+  .looking{
+    padding-bottom: 20px;
+  }
+  .pagenumber button{
+    text-align: center;
+    display:inline-block;
+    border: 1px solid $BorderColors;
+    width: 36px;
+    height: 30px;
+    margin: -3px;
+    line-height: 25px;
+    background-color: white; 
+    margin-bottom: 20px;
+    &:hover{
+      background-color: $BackgroundColor;
+      border-color: black;
+    }
+  }
+  .leftBox{
+    border-radius: 3px;
+  }
+  .rightBox{
+    border-radius: 3px;
+  }
+}
+
+.subscribe{
+  font-size: 14px;
+  text-align: center;
+  background-color: $BackgroundColor;
+  border-top: 1px solid $BorderColors;
+  border-bottom: 1px solid $BorderColors;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  form{
+    padding-top: 10px;
+    display: inline-block
+  }
+  button{
+    font-size: 15px;
+    padding: 10px;
+    background-color: $EtsyBlue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 50px;
+  }
+  input{
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 8px;
+  }
+}
+
+.footerA{
+  background-color: $BackgroundColor;
+  padding: 20px 200px;
+  font-size: 12px;
+  border-bottom: 1px solid $BorderColors;
+  a{
+    text-decoration: none;
+    color: $EtsyBlue;
+  }
+  li{
+    padding-bottom: 10px;
+  }
+}
+
+.footerA div{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.column1 button{
+  padding: 5px;
+  border-radius: 3px;
+  background-color: $EtsyBlue;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.footerB{
+  color: black;
+  text-align: center;
+  background-color: $BackgroundColor;
+  height: 100px; 
+  padding-top: 50px;
+}
+
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAMPLE PROJECT</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="left">  
+      <ul>
+      <li class='symbol'><a href="#">Etsy</a></li>
+      <li><form method="post">
+        <input type="text" name="Search">
+      </form></li>
+      <li><button>Search</button></li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li><a href="#">Sell on Etsy</a></li>
+        <li><a href="#">Register</a></li>
+        <li><button>Sign In</button></li>
+        <li><div class="cart-sprite"></div><button class="cart">Cart</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><a href='#'>Clothing &#38; Accessories</a></li>
+      <li><a href='#'>Jewelry</a></li>
+      <li><a href='#'>Craft Supplies &#38; Tools</a></li>
+      <li><a href='#'>Weddings</a></li>
+      <li><a href='#'>Entertainment</a></li>
+      <li><a href='#'>Home &#38; Living</a></li>
+      <li><a href='#'>Kids &#38; Baby</a></li>
+      <li><a href='#'>Vintage</a></li>   
+    </ul>
+  </div>
+
+  <div class="large_area">
+    <div class="left_content">
+      <div class="sidebar_one">
+        <p>Show results for:</p><br>
+
+          <div class="box">
+            <p>All Categories</p>
+            <ul>
+              <li><a href="#">Art &#38; Collectibles</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Home &#38; Living</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Craft Supplies &#38; Tools</a></li>
+              <li><a href="#">Paper &#38; Party Supplies</a></li>
+              <li><a href="#">Jewelry</a></li>
+              <li><a href="#">Bags &#38; Purses</a></li>
+              <li><a href="#">Toys &#38; Games</a></li>
+              <li><a href="#">Bath &#38; Beauty</a></li>
+              <li><a href="#">Electronics &#38; Accessories</a></li>
+              <li><a href="#">Books, Movies &#38; Music</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Weddings</a></li>
+              <li><a href="#">Pet Supplies</a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="sidebar_two">
+        <p>Refine your search</p><br>
+
+        <div class="box">
+          <p>Item Type</p>
+          <ul>
+            <li><input type="radio" name="itemtype" checked="checked"><a href="#">All Items</a></li>
+            <li><input type="radio" name="itemtype"><a href="#">Handmade</a></li>
+            <li><input type="radio" name="itemtype"><a href="#">Vintage</a></li>
+          </ul>
+
+          <hr class="divider">
+
+          <p>Price</p>
+          
+            <form method="post">
+              <input type="text" name="Price" placeholder="Low">
+            </form>
+            <form method="post">
+              <input type="text" name="Price" placeholder="High" class="highPrice">
+            </form>
+            <form method="post">
+              <input type="button" class="arrow">
+              <p class='to'>to</p>
+            </form>
+            <p class='money'>$</p>
+            <p class='money2'>$</p>
+
+          <hr class="dividerSpecial">
+
+          <p>Filter by Color</p>
+          <div class='color_buttons'>
+            <a href="#"><div class="red button"></div></a>
+            <a href="#"><div class="orange button"></div></a>
+            <a href="#"><div class="yellow button"></div></a>
+            <a href="#"><div class="green button"></div></a>
+            <a href="#"><div class="blue button"></div></a>
+            <a href="#"><div class="indigo button"></div></a>
+            <a href="#"><div class="black button"></div></a>
+            <a href="#"><div class="white button"></div></a>
+          </div>
+
+          <hr class="divider">
+
+          <p>Ordering Options</p>
+          <ul>
+            <li><input type="checkbox"><a href="#">Accepts Etsy Gift Cards</a>
+            </li>
+            <li><input type="checkbox"><a href="#">Customizable</a></li>
+          </ul>
+
+          <hr class="divider">
+
+          <p>Shop Location</p>
+          <ul>
+            <li><input type="radio" name="kevin" checked="checked"><a href="#">Anywhere</a></li>
+            <li><input type="radio" name="kevin"><a href="#">United States</a></li>
+            <li class ="chooseLocation"><a href="#">Choose a custom location</a></li>
+          </ul>
+
+          <hr class="divider">
+
+          <p class="shipIt">Ship To</p>
+          <select>
+            <option>United States</option>
+            <option>Watville</option>
+            <option>Watland</option>
+            <option>Watkinsville</option>
+            <option>Waterpark</option>
+            <option>Wathering Heights</option>
+            <option>Wathering Wathering Wathering</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="tiles">
+      <ul class="extra">
+        <li class="top">Top categories for "watwars"<br><br></li>
+        <li><a href="#">All Categories</a> > "starwars" (get Results)<p class='sortBy'>Sort by: <a href="#">Relevancy</a></p></li>
+      </ul>
+<!--each tile div is located here via JS -->
+    </div>
+
+
+
+    <div class="relatedTo">
+    
+      <p> Related to <strong>starwars</strong></p>
+
+      <ul>
+        <li><a href="#">starwars costume</a></li>
+        <li><a href="#">starwars birthday</a></li>
+        <li><a href="#">starwars art</a></li>
+        <li><a href="#">starwars baby</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="#">starwars shirt</a></li>
+        <li><a href="#">lord of the rings</a></li>
+        <li><a href="#">boba fett</a></li>
+        <li><a href="#">lightsaber</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="#">star wars costume</a></li>
+        <li><a href="#">stormtrooper</a></li>
+        <li><br></li>
+        <li><br></li>
+      </ul>
+
+      <p class="looking">Looking for shops? <a href="#">starwarsdan</a>, <a href="#">StarWarsNotebooks</a>, <a href="#">seanstarwars</a>. <a href="#">See more</a>.</p>
+
+      <div class="pagenumber">
+        <button class='leftBox'><</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>...</button>
+        <button>140 </button>
+        <button class='rightBox'>></button>
+      </div>
+    </div>
+
+    <div class="subscribe">
+      <p>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
+      <form method="post">
+        <input type="text" name="Search" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footerA">
+      <div class="column1">
+        <ul>
+          <li>Turn your passion into a<br> business</li>
+          <li><button>Open a shop</button></li>
+          <li>Sell on Etsy</li>
+          <li><a href="#">Seller Handbook</a></li>
+          <li><a href="#">Etsy credit card reader</a></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+        </ul>
+      </div>
+
+      <div class="column2">
+        <ul>
+          <li>Join the community</li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">Upcoming events</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+        </ul>
+      </div>
+
+      <div class="column3">
+        <ul>
+          <li>Discover and shop</li>
+          <li><a href="#">Gift cards</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tastemakers</a></li>
+          <li><a href="#">Mobile apps</a></li>
+          <li><a href="#">Gift registries</a></li>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">Manufacturing</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Etsy Finds</a></li>
+        </ul>
+      </div>
+
+      <div class="column4">
+        <ul>
+          <li>Get to know us</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+        </ul>
+      </div>
+
+      <div class="column5">
+        <ul>
+          <li>Follow Etsy</li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+          <li><br></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="footerB">
+      <p>Wat Wars. Kevin Mooney.</p>
+    </div>
+
+  </div>
+
+ 
+  <script type="text/template" id="itemTemplate">
+    <div class="eachTile">
+      <a href="<%= url %>"><img src="<%= Images[0].url_170x135 %>"></a>
+      <p class="title"> <a href='<%= Shop.url %>'><%= title %> </a></p>
+      <p class="price"> $<%= price %> <%=currency_code %> </p>
+      <p class="name"> <a href='<%= Shop.url %>'><%=Shop.shop_name %></a> </p>
+    </div>
+  </script>
+
+
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
